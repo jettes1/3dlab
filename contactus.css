@@ -1,0 +1,145 @@
+.contactus {
+    margin: 0;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contactForm {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 400px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.contactForm h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.contactForm .form-control {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.contactForm .form-control:focus {
+    border-color: #06a5e0;
+    box-shadow: 0 0 5px #0084b4;
+}
+
+.contactForm button {
+    background-color: #06a5e0;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.contactForm button:hover {
+    background-color: #0084b4;
+    transform: scale(1.05);
+}
+
+.contactForm .text-center a {
+    color: rgb(81, 81, 81);
+    text-decoration: none;
+}
+
+.contactForm .text-center a:hover {
+    text-decoration: underline;
+}
+
+.contactForm .form-group {
+    margin-bottom: 20px;
+}
+
+.contactForm .form-group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.contactForm .form-control {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.contactForm .form-check {
+    margin-left: 25px;
+}
+
+.contactForm .form-check input {
+    margin-right: 10px;
+}
+
+.contactForm .form-check-label {
+    font-size: 14px;
+    color: #333;
+}
+
+.map {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 400px;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.map h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.map iframe {
+    border-radius: 8px;
+    max-width: 100%;
+    height: 450px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+    .contactus {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactForm {
+        max-width: 100%;
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+
+    .map {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    button[type="submit"] {
+        font-size: 0.9rem;
+    }
+}

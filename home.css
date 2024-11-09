@@ -1,0 +1,348 @@
+.kryesore {
+  display: flex;
+  width: 100%;
+}
+
+.pjese,
+.getQuote {
+  flex: 1;
+}
+
+.getQuote {
+  background-color: #191919;
+  color: white;
+  overflow-wrap: break-word;
+  padding: 25px 0 25px 45px;
+
+}
+
+.getQuote h1 {
+  font-weight: 600;
+  margin-bottom: 25px;
+  font-size: 3rem;
+}
+
+.getQuote h4 {
+  color: rgb(197, 197, 197);
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.getQuote p {
+  color: rgb(106, 106, 106);
+  font-weight: 300;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  padding-right: 15px;
+}
+
+.getQuote ul li {
+  color: rgb(106, 106, 106);
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+.konfidenciale {
+  font-size: 0.8rem !important;
+  margin-left: 8px;
+}
+
+.konfidenciale img {
+  margin: 0 3px 0 0;
+}
+
+.pjese img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.getQuote button {
+  background-color: #06a5e0;
+  border: 2px solid #191919;
+  border-radius: 20px;
+  padding: 8px;
+  width: 160px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 8px;
+}
+
+.getQuote button:hover {
+  background-color: #0084b4;
+  transform: scale(1.1);
+}
+
+
+
+@media (max-width: 992px) {
+  .kryesore {
+    flex-direction: column;
+  }
+
+  .pjese,
+  .getQuote {
+    flex: none;
+    width: 100%;
+  }
+
+  .standartet-cards {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .projektet-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avantazhet-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .karta {
+    margin: 20px !important;
+  }
+
+  .karta1 {
+    margin: 20px !important;
+  }
+
+  .karta2 {
+    margin: 20px !important;
+  }
+
+  .para-avantazhet,
+  .para-projektet,
+  .para-standartet {
+    margin-bottom: 30px !important;
+  }
+
+}
+
+/* standartet */
+
+.standartet h1 {
+  text-align: center;
+  margin: 80px 40px 40px 40px;
+  text-wrap: wrap;
+  font-weight: 600;
+}
+
+.para-standartet {
+  text-align: center;
+  margin: 40px 40px 80px 40px;
+  text-wrap: wrap;
+}
+
+.standartet-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.karta {
+  margin: 0 1rem;
+  border-radius: 30px;
+  position: relative;
+  height: 400px;
+  width: 200px;
+}
+
+.karta img {
+  width: 100px;
+  height: auto;
+  margin: 30px 30px 10px 30px;
+}
+
+.karta h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.karta p {
+  color: rgb(106, 106, 106);
+}
+
+.linku {
+  text-decoration: none;
+  position: absolute;
+  bottom: 17px;
+}
+
+
+
+/* rruga */
+
+.content-kartat5--progress {
+  background-color: #E6F1FC;
+  padding: 2.5rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content-kartat5--progress h2 {
+  margin-bottom: 30px;
+}
+
+.content-kartat5--progress .kartat5 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.content-kartat5--progress .karta5-item {
+  flex: 2;
+  position: relative;
+  margin-bottom: 2rem;
+  padding-top: 1.5rem;
+  border-top: 3px solid #0071E3;
+}
+
+.content-kartat5--progress .karta5-item:before {
+  content: ' ';
+  width: 13px;
+  height: 13px;
+  background: white;
+  border-radius: 50%;
+  border: 3px solid #0071E3;
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+}
+
+.content-kartat5--progress .karta5-item-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #262626;
+}
+
+.content-kartat5--progress .karta5-item-subtitle {
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.85);
+  margin-top: .5rem;
+  padding-right: 1rem;
+}
+
+.content-kartat5--progress .kartat5 .karta5-item:last-child:before {
+  right: 0;
+  left: auto;
+  width: 20px;
+  height: 20px;
+  top: -0.75rem;
+}
+
+@media (max-width: 768px) {
+  .content-kartat5--progress .karta5-item:before {
+      top: 0;
+      left: -0.5rem;
+  }
+
+  .content-kartat5--progress {
+      padding: 1.5rem;
+  }
+
+  .content-kartat5--progress .kartat5 {
+      flex-direction: column;
+  }
+
+  .content-kartat5--progress .karta5-item {
+      padding-left: 2rem;
+      padding-top: 0;
+      padding-bottom: 1.5rem;
+      border-top: 0;
+      margin-bottom: 0;
+      border-left: 3px solid #0071E3;
+  }
+
+  .content-kartat5--progress .kartat5 .karta5-item:last-child:before {
+      left: -0.75rem;
+      top: 1.8rem;
+      width: 20px;
+      height: 20px;
+  }
+}
+
+/* projektet */
+
+.projektet h1 {
+  text-align: center;
+  margin: 80px 40px 40px 40px;
+  text-wrap: wrap;
+  font-weight: 600;
+}
+
+.para-projektet {
+  text-align: center;
+  margin: 40px 40px 80px 40px;
+  text-wrap: wrap;
+}
+
+.projektet-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.karta1 {
+  margin: 0 1rem;
+  border-radius: 30px;
+  position: relative;
+  height: 400px;
+  width: 200px;
+}
+
+.karta1 img {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.karta1 p {
+  color: rgb(106, 106, 106);
+}
+
+/* Avantazhet */
+
+.avantazhet h1 {
+  text-align: center;
+  margin: 80px 40px 40px 40px;
+  text-wrap: wrap;
+  font-weight: 600;
+}
+
+.para-avantazhet {
+  text-align: center;
+  margin: 40px 40px 80px 40px;
+  text-wrap: wrap;
+}
+
+.avantazhet-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.karta2 {
+  margin: 0 1rem 60px 1rem;
+  border-radius: 30px;
+  position: relative;
+  height: 550px;
+  width: 200px;
+}
+
+.karta2 img {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.karta2 h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.karta2 p {
+  color: rgb(106, 106, 106);
+}

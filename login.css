@@ -1,0 +1,74 @@
+#login-form, #register-form {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#login-form h2, #register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.form-control {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    border-color: #06a5e0;
+    box-shadow: 0 0 5px #0084b4;
+}
+
+button[type="submit"] {
+    background-color: #06a5e0;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0084b4;
+}
+
+.container a {
+    color: rgb(81, 81, 81);
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 576px) {
+    .container {
+        margin-top: 50px;
+    }
+
+    #login-form, #register-form {
+        padding: 20px;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    button[type="submit"] {
+        font-size: 0.9rem;
+    }
+}
