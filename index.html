@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
   <link rel="stylesheet" href="./root.css">
   <link rel="stylesheet" href="./home.css">
   <title>3dLab</title>
@@ -65,7 +66,7 @@
           <li>Filamentë të cilësisë më të lartë.</li>
           <li>Cmim i arsyeshëm dhe dorzim i shpejt.</li>
         </ul>
-        <button id="bt-getQuote">Merni një çmim</button>
+        <button id="bt-getquote" onclick="document.location='getquote.html'">Merni një çmim</button>
         <button id="bt-email" onclick="document.location='contactus.html'">Email</button>
         <p class="konfidenciale"><img style="width: 10px; height: 10px;" src="./images/lock.png" alt="">Te dhënat tuaja
           jane konfidenciale.</p>
@@ -113,34 +114,40 @@
     <div class="rruga mt-5 p-5 bg-white">
       <section id="our-ordering-process" class="section__landing-page">
         <div class="content-kartat5--progress">
-            <h2>Procesi i porositjes</h2>
-            <div class="kartat5">
-                <div class="karta5-item">
-                    <div class="karta5-item-title">Ngarko një file STL</div>
-                    <div class="karta5-item-subtitle">Ngarko në mënyrë të sigurtë dizajnin e pjesës tuaj në formatin STL dhe zgjidh specifikimet sipas nevojave tuaja.</div>
-                </div>
-                <div class="karta5-item">
-                    <div class="karta5-item-title">Ofertë e menjëhershme</div>
-                    <div class="karta5-item-subtitle">Klikoni në "Merr Çmimin" për të parë çmimin përfundimtar të pjesës tuaj</div>
-                </div>
-                <div class="karta5-item">
-                    <div class="karta5-item-title">Sasia dhe porosia</div>
-                    <div class="karta5-item-subtitle">Pasi të keni zgjedhur sasin dhe të keni shtypur "Porosit", do të drejtoheni në faqen e blerjes, ku mund të rregulloni porosinë tuaj ose të shtoni pjesë të tjera para se të kaloni në pagesë.</div>
-                </div>
-                <div class="karta5-item">
-                    <div class="karta5-item-title">Prodhimi</div>
-                    <div class="karta5-item-subtitle">Pasi pagesa të procesohen me sukses, nis prodhimi i porosisë tuaj dhe zakonisht zgjat deri në 24 orë.</div>
-                </div>
-                <div class="karta5-item">
-                    <div class="karta5-item-title">Kontrolli i cilësisë</div>
-                    <div class="karta5-item-subtitle">Ne marrim përgjegjësi të plotë dhe garantojmë që pjesët e prodhuara nga 3dLab inspektohen nga inxhinierët tanë në përputhje me standardet më të larta.</div>
-                </div>
-                <div class="karta5-item">
-                    <div class="karta5-item-title">Dorëzimi</div>
-                </div>
+          <h2>Procesi i porositjes</h2>
+          <div class="kartat5">
+            <div class="karta5-item">
+              <div class="karta5-item-title">Ngarko një file STL</div>
+              <div class="karta5-item-subtitle">Ngarko në mënyrë të sigurtë dizajnin e pjesës tuaj në formatin STL dhe
+                zgjidh specifikimet sipas nevojave tuaja.</div>
             </div>
+            <div class="karta5-item">
+              <div class="karta5-item-title">Ofertë e menjëhershme</div>
+              <div class="karta5-item-subtitle">Klikoni në "Merr Çmimin" për të parë çmimin përfundimtar të pjesës tuaj
+              </div>
+            </div>
+            <div class="karta5-item">
+              <div class="karta5-item-title">Sasia dhe porosia</div>
+              <div class="karta5-item-subtitle">Pasi të keni zgjedhur sasin dhe të keni shtypur "Porosit", do të
+                drejtoheni në faqen e blerjes, ku mund të rregulloni porosinë tuaj ose të shtoni pjesë të tjera para se
+                të kaloni në pagesë.</div>
+            </div>
+            <div class="karta5-item">
+              <div class="karta5-item-title">Prodhimi</div>
+              <div class="karta5-item-subtitle">Pasi pagesa të procesohen me sukses, nis prodhimi i porosisë tuaj dhe
+                zakonisht zgjat deri në 24 orë.</div>
+            </div>
+            <div class="karta5-item">
+              <div class="karta5-item-title">Kontrolli i cilësisë</div>
+              <div class="karta5-item-subtitle">Ne marrim përgjegjësi të plotë dhe garantojmë që pjesët e prodhuara nga
+                3dLab inspektohen nga inxhinierët tanë në përputhje me standardet më të larta.</div>
+            </div>
+            <div class="karta5-item">
+              <div class="karta5-item-title">Dorëzimi</div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
     </div>
 
     <div class="projektet">
@@ -230,7 +237,7 @@
 
   <div class="quote">
     <h1>Merrni një çmim në çast</h1>
-    <button>Merrni çmimin</button>
+    <button id="bt-getquote" onclick="document.location='getquote.html'">Merrni çmimin</button>
   </div>
 
   <footer>

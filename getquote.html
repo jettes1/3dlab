@@ -8,12 +8,11 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
   <link rel="stylesheet" href="./root.css">
-  <link rel="stylesheet" href="./dyqani.css">
   <title>3dLab</title>
 </head>
 
-<body>
-  <header>
+<body style="display: flex; flex-direction: column; height: 100vh;">
+  <header style="position: fixed; top: 0; left: 0; width: 100%;">
     <nav class="navbar navbar-expand-lg bg-black">
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" alt="logo" style="height: 50px;"></a>
@@ -33,7 +32,7 @@
               <a class="nav-link text-white" href="./about.html">Rreth Nesh</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white active text-light bg-dark" href="./dyqani.html">Dyqani</a>
+              <a class="nav-link text-white" href="./dyqani.html">Dyqani</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="./contactus.html">Na kontakto</a>
@@ -51,32 +50,11 @@
     </nav>
   </header>
 
-  <div class="dyqani">
-    <h1 class="text-center" style="height: 300px;">Dyqani</h1>
-  </div>
+  <div style="flex-grow: 1; position: fixed; top: 30px; left: 0; width: 100%;">
 
-  <div class="quote">
-    <h1>Merrni një çmim në çast</h1>
-    <button id="bt-getquote" onclick="document.location='getquote.html'">Merrni çmimin</button>
-  </div>
+    <iframe class="appview" src="https://cloud.skaitech.al/3dquoteviewer" frameborder="0" width="100%" height="800px"></iframe>
 
-  <footer>
-    <div class="social">
-      <ul class="list">
-        <li><a href="https://www.instagram.com/"><img src="./images/instagram.png" alt="instagram"></a></li>
-        <li><a href="https://www.facebook.com/"><img src="./images/facebook.png" alt="facebook"></a></li>
-        <li><a href="https://www.tiktok.com/en/"><img src="./images/tiktok.png" alt="tiktok"></a>
-        </li>
-        <li><a href="https://www.whatsapp.com/"><img src="./images/whatsapp.png" alt="whatsapp"></a></li>
-        <li><a href="https://www.youtube.com/"><img src="./images/youtube.png" alt="youtube"></a>
-        </li>
-      </ul>
-    </div>
-    <div class="copyright">
-      <p>&copy; 2024 <span style="font-weight: 700;"><a href="https://3dlab.al/">3dLab.al</a></span> Të gjitha të
-        drejtat e rezervuara.
-    </div>
-  </footer>
+</div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
