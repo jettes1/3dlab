@@ -1,11 +1,5 @@
 .kryesore {
-  display: flex;
-  width: 100%;
-}
-
-.pjese,
-.getQuote {
-  flex: 1;
+  margin: 0;
 }
 
 .getQuote {
@@ -58,6 +52,12 @@
   object-position: center;
 }
 
+.pjese {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
 .getQuote button {
   background-color: #06a5e0;
   border: 2px solid #191919;
@@ -78,15 +78,6 @@
 
 
 @media (max-width: 992px) {
-  .kryesore {
-    flex-direction: column;
-  }
-
-  .pjese,
-  .getQuote {
-    flex: none;
-    width: 100%;
-  }
 
   .standartet-cards {
     flex-direction: column;
@@ -237,32 +228,32 @@
 
 @media (max-width: 768px) {
   .content-kartat5--progress .karta5-item:before {
-      top: 0;
-      left: -0.5rem;
+    top: 0;
+    left: -0.5rem;
   }
 
   .content-kartat5--progress {
-      padding: 1.5rem;
+    padding: 1.5rem;
   }
 
   .content-kartat5--progress .kartat5 {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .content-kartat5--progress .karta5-item {
-      padding-left: 2rem;
-      padding-top: 0;
-      padding-bottom: 1.5rem;
-      border-top: 0;
-      margin-bottom: 0;
-      border-left: 3px solid #0071E3;
+    padding-left: 2rem;
+    padding-top: 0;
+    padding-bottom: 1.5rem;
+    border-top: 0;
+    margin-bottom: 0;
+    border-left: 3px solid #0071E3;
   }
 
   .content-kartat5--progress .kartat5 .karta5-item:last-child:before {
-      left: -0.75rem;
-      top: 1.8rem;
-      width: 20px;
-      height: 20px;
+    left: -0.75rem;
+    top: 1.8rem;
+    width: 20px;
+    height: 20px;
   }
 }
 
