@@ -54,7 +54,7 @@
 
     <div class="kryesore">
       <div class="pjese">
-        <img src="./images/parts-scaled.jpeg" alt="3d parts">
+        <img src="./images/parts-scaled.jpeg" alt="3d parts" class="img-fluid">
       </div>
       <div class="getQuote">
         <h1>Printoni 3D Online sipas Kërkesës</h1>
@@ -82,10 +82,10 @@
         <div class="card karta" style="width: 18rem;">
           <img src="./images/list-check.svg" class="card-img-top" alt="pasterti">
           <div class="card-body">
-            <h5 class="card-title">Pastrim</h5>
+            <h5 class="card-title">Pastrimi</h5>
             <p class="card-text">Për të gjitha pjesët FDM, strukturat mbështetëse hiqen (ku është e aplikueshme) dhe
               pastrimi nga materialet e tepërta bëhet.</p>
-            <a href=".#" class="linku">Më shumë</a>
+            <a href=".#" class="linku" data-bs-toggle="modal" data-bs-target="#exampleModal1">Më shumë</a>
 
           </div>
         </div>
@@ -96,7 +96,7 @@
             <p class="card-text">Pjesët 3D kontrollohen për ngjyra të papërshtatëshme, mungesë mbetjesh sipërfaqësore
               dhe
               shumë defekte të tjera potenciale vizuale dhe strukturore.</p>
-            <a href=".#" class="linku">Më shumë</a>
+            <a href=".#" class="linku" data-bs-toggle="modal" data-bs-target="#exampleModal2">Më shumë</a>
           </div>
         </div>
         <div class="card karta" style="width: 18rem;">
@@ -105,11 +105,85 @@
             <h5 class="card-title">Saktësia Dimensionale</h5>
             <p class="card-text">Ne garantojmë saktësi dimensionale brenda ± 0.1% me një kufi më të ulët prej ± 0.1 mm.
             </p>
-            <a href=".#" class="linku">Më shumë</a>
+            <a href=".#" class="linku" data-bs-toggle="modal" data-bs-target="#exampleModal3">Më shumë</a>
           </div>
         </div>
       </div>
     </div>
+
+
+    <!-- standart modals  -->
+
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Pastrimi</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>3dLAB ka zhvilluar një set procesesh për të siguruar që çdo pjesë e personalizuar që porositni është e
+              pastruar dhe e pastër përpara dorëzimit. Ne kryejmë një inspektim të plotë dhe pastrim të çdo pjese për të
+              hequr çdo papastërti, ndotje ose mbetje që mund të ndikojnë në funksionalitetin ose pamjen e produktit.
+              Pastrimi bëhet gjatë dhe pas prodhimit, për të siguruar që çdo pjesë është gati për përdorim dhe i
+              përgjigjet standardeve të cilësisë.</p>
+            <ul>
+              <li>Pastrimi i pjesëve pas procesit të prodhimit</li>
+              <li>Kontrolli vizual dhe inspektimi për papastërti të padukshme</li>
+              <li>Sigurimi i cilësisë dhe pamjes estetike të produktit</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Kontrolli i Cilësisë</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>3dLAB ka zhvilluar një set procesesh për të siguruar që standardet më të larta të prodhimit aplikohet për
+              çdo
+              pjesë të personalizuar që porositni. Ne inspektojmë çdo porosi në aspektin dimensional dhe vizual, gjatë
+              dhe pas prodhimit, në mënyrë që komponentët tuaj të personalizuar të dorëzohen në kohë dhe sipas
+              specifikimeve tuaja të sakta.</p>
+            <ul>
+              <li>Raport i Testit të Materialeve</li>
+              <li>Raport i Inspektimit Dimensional</li>
+              <li>Inspektimi i Artikullit të Parë</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered  modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Saktësia Dimensionale</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>3dLAB ka zhvilluar një sër procesesh për të siguruar që standardet më të larta të prodhimit aplikohen për
+              çdo pjesë të personalizuar që porositni. Ne fokusohemi në saktësinë dimensionale të çdo komponenti gjatë
+              dhe pas prodhimit, duke inspektuar çdo dimension për të siguruar përputhshmërinë me specifikimet tuaja të
+              sakta dhe duke garantuar që produkti përmbush kërkesat e projektimit. Pjesët tuaja të personalizuara
+              dorëzohen në kohë dhe me saktësinë e kërkuar.</p>
+            <ul>
+              <li>Inspektimi i Saktësisë Dimensionale</li>
+              <li>Matje të sakta dhe verifikimi i tolerancave</li>
+              <li>Përsëritshmëria dhe konsistenca e dimensioneve të produktit</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <div class="rruga mt-5 p-5 bg-white">
       <section id="our-ordering-process" class="section__landing-page">
